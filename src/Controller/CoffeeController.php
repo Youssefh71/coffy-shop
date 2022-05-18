@@ -31,7 +31,7 @@ class CoffeeController
         }
 
         // La vue correspondant à ce controller
-        require_once __DIR__ . '../../../templates/index.php';
+        require_once __DIR__ . '../../../templates/add.php';
     }
 
    
