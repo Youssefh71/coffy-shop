@@ -20,8 +20,8 @@ class CoffeeController
             // Instancier l'entité Avis
             $entity = new Entity\Coffee();
             $entity->setName(htmlspecialchars(strip_tags($_POST['coffee'])));
-            $entity->setDescription(htmlspecialchars(strip_tags($_POST[''])));
-            $entity->setRecette(htmlspecialchars(strip_tags($_POST[''])));
+            $entity->setDescription(htmlspecialchars(strip_tags($_POST['coffee'])));
+            $entity->setRecette(htmlspecialchars(strip_tags($_POST['coffee'])));
             
 
 
