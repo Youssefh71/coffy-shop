@@ -6,7 +6,7 @@ require_once __DIR__ .'../../Entity/Coffee.php';
 /**
  * Gère le CRUD sur la table "avis"
  */
-class CoffeRepository extends Db {
+class CoffeeRepository extends Db {
 
     /**
      * Insertion dans la table SQL "avis"
