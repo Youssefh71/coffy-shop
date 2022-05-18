@@ -33,7 +33,7 @@
 <div class="image col-lg-6">
   <p>Image</p>
   <div>
-      <input type="file" name="image" class="form-control-file mb-3" id="image">
+      <input type="text" name="image" class="form-control-file mb-3" id="image">
     </div>
     <p>L'image ne doit pas dépasser les 1Mo.</p>
 </div>
