@@ -23,6 +23,33 @@ class CoffeeRepository extends Db {
         return $query->execute();
     }
 
+    /**
+     * Sélectionne toutes les données de la table SQL "coffee"
+     */
+    public function selectAll()
+    {
+        $query = $this->getDb()->query('SELECT * FROM coffee');
+        $allCoffee = $query->fetchAll();
+
+        // Boucle sur les données reçues de la requête SQL
+        foreach($allCoffee as $coffee) {
+            $coffeeObject = new Entity\Coffee();
+            $coffeeObject->setId($coffee['id']);
+            $coffeeObject->setName($coffee['name']);
+            $coffeeObject->setDescription($coffee['description']);
+            $coffeeObject->setRecette($coffee['recette']);
+            $coffeeObject->setImage($coffee['image']);
+            $coffeeObject->setPrice($coffee['price']);
+            
+            
+
+            // Stock chaque objet avis dans un tableau
+            $objects[] = $coffeeObject;
+        }
+
+        return $objects ?? [];
+    }
+
 
 
 

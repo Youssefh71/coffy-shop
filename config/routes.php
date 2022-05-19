@@ -22,6 +22,15 @@ switch ($uri) {
         break;
 
 
+    // Modifie un coffee
+    case '/liste':
+        $controller = new CoffeeController();
+        $controller->list();
+        break;
+
+
+
+
 
     default:
         //  echo '<h1>Erreur 404</h1>';

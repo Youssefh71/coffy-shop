@@ -44,14 +44,26 @@ class CoffeeController
     }
 
     /**
-     * Formulaire permettant d'ajouter un un type de café
-     * URL d'accès : http://coffy-shop.test/
+     * Page d'acceuil
      */
     public function display()
     {
 
         require_once __DIR__ . '../../../templates/index.php';
     }
+
+    /**
+     * Affiche tous les coffee
+     * URL d'accès : http://avis.test/list
+     */
+    public function list()
+    {
+        $coffeeRepository = new CoffeeRepository();
+        $listCoffee = $coffeeRepository->selectAll();
+        
+        require_once __DIR__ .'../../../templates/liste.php';
+    }
+
 
    
 }
