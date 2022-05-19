@@ -43,7 +43,50 @@ class CoffeeController
         require_once __DIR__ . '../../../templates/add.php';
     }
 
+    public function liste()
+    {
+        $coffeeRepository = new coffeeRepository();
+        $listCoffee = $coffeeRepository->selectAll();
+
+        require_once __DIR__ . '../../../templates/index.php';
+    }
+    public function delete()
+    {
+        // var_dump($_GET['id']);
+
+        // Appelle la méthode de suppression dans le repository en lui passant
+        // l'ID de l'enregistrement à supprimer
+        $coffeeRepository = new CoffeeRepository();
+        $success = $coffeeRepository->remove($_GET['id']);
+
+        // Redirige l'utilisateur vers la route "/liste"
+        header('Location: /index?delete=' . $success);
+    }
    
+    public function edit()
+    {
+        // var_dump($_GET['id']);
+        $coffeeRepository = new CoffeeRepository();
+        $coffee = $coffeeRepository->selectOne($_GET['id']);
+
+        // Si le formulaire est envoyé
+        if (!empty($_POST)) {
+            // Ecrase l'ancien contenu de l'objet "Avis" par celui du formulaire
+            $coffee->setName(htmlspecialchars(strip_tags($_POST['name'])));
+            $coffee->setDescription(htmlspecialchars(strip_tags($_POST['description'])));
+            $coffee->setRecette(htmlspecialchars(strip_tags($_POST['recette'])));
+            $coffee->setImage(htmlspecialchars(strip_tags($_POST['image'])));
+            $coffee->setPrice(htmlspecialchars(strip_tags($_POST['price'])));
+
+            // Transmet cet objet à une méthode du repository pour mise à jour
+            $success = $coffeeRepository->update($coffee);
+
+            // Redirige l'utilisateur vers la tableau
+            header('Location: /index?edit='. $success);
+        }
+
+        require_once __DIR__ .'../../../templates/edit.php';
+    }
 }
 
 
