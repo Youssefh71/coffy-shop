@@ -15,6 +15,8 @@ class CoffeeController
         // Si le formulaire est envoyé, la superglobale $_POST est
         // remplie des données du formulaire
         if (!empty($_POST)) {
+
+           // var_dump($_POST);
             
             // Envoyer les infos du formulaire à la classe Avis
             // Instancier l'entité Avis
