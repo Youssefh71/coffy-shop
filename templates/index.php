@@ -21,30 +21,55 @@
   
         <main class="py-5">
             <div class="container">
-                <div>
-                    Bonjour !
+                <!-- <div>
+                    Title !
                     <a href="" title=""></a>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-lg-6 pb-5">
-                        <article>
-                            <a href="" title=" " class="text-dark text-decoration-none">
-                                <img src="" alt="" class="w-100 rounded">
-                                <h1 class="pt-2"></h1>
+                </div> -->
+
+
+                <!-- beginning card -->
+
+                <div class="row ">
+                    <div class="card-container col-12 col-lg-6 pb-5">
+
+
+                        <article class="">
+                            <a href="/" title="My coffee shop " class="text-dark text-decoration-none">
+                                <img src="img/3coffee.png" alt="card img " class="w-100 rounded">
+                                <h1 class="pt-2">My Coffee</h1>
                             </a>
-                            <p class="text-dark">
+                            <p class="text-dark card-text">Description Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae saepe minus quos fugit inventore quisquam nulla possimus at dignissimos. Enim quo, doloribus saepe reprehenderit minus libero porro! Nesciunt, amet magni.
                             </p>
-                            <p class="py-2">
+                            <p class="py-2 card-text">Recette Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt necessitatibus repellendus dolores laudantium error. Reprehenderit perspiciatis voluptatem cumque corrupti nostrum voluptates illo nam nesciunt vitae, iste maiores voluptas, adipisci neque. 
                             </p>
                             <div class="d-flex align-items-center gap-2">
-                                <a href="" title="" class="badge rounded-pill bg-primary text-decoration-none">
+                                <a href="" title="" class="badge rounded-pill bg-primary text-decoration-none">hello
                                 </a>
                             </div>
+
+                            <div class="d-flex align-items-center gap-2">
+                                <a href="/edit/coffee?id=<?php echo $coffee->getId(); ?>" title="" class="badge rounded-pill bg-primary text-decoration-none">edit
+                                </a>
+                            </div>
+                            <div>
+                                <a href="">hello2</a>
+                            <a href="/edit/coffee?id=<?php echo $coffee->getId(); ?>" class="btn btn-outline-secondary">
+                                Edit
+                            </a>
+                            </div>
+
+
+                     
+                            </div>
                         </article>
+
                     </div>
 
 
                 </div>
+
+                          <!-- end card -->
+
             </div>
         </main>
 
