@@ -6,7 +6,7 @@ require_once '../src/Controller/ErrorController.php';
 
 switch ($uri) {
 
-        //Accueil
+        //Page d'acceuil (index.php)
     case '/':
         $controller = new CoffeeController();
         // Charge la méthode correspondant à la vue souhaitée
@@ -14,7 +14,7 @@ switch ($uri) {
         break;
 
 
-        //Accueil
+        //Page ajouter à la BDD (add.php)
     case '/add':
         $controller = new CoffeeController();
         // Charge la méthode correspondant à la vue souhaitée
