@@ -19,3 +19,19 @@
 body {
     font-family: 'Lexend Zetta', sans-serif;
 }
+
+.menu {
+    font-family: 'Lexend Zetta', sans-serif;
+}
+
+.img-logo {
+    width: 100px;
+}
+
+.carousel-img {
+    width: 50%;       
+}
+
+.container {
+    width: 60%;
+}

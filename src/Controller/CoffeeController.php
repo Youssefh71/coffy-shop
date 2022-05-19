@@ -43,7 +43,6 @@ class CoffeeController
         require_once __DIR__ . '../../../templates/add.php';
     }
 
-
     public function liste()
     {
         $coffeeRepository = new coffeeRepository();
@@ -63,7 +62,6 @@ class CoffeeController
         // Redirige l'utilisateur vers la route "/liste"
         header('Location: /liste?delete=' . $success);
     }
-
     /**
      * Formulaire permettant d'ajouter un un type de café
      * URL d'accès : http://coffy-shop.test/
@@ -73,8 +71,6 @@ class CoffeeController
 
         require_once __DIR__ . '../../../templates/liste.php';
     }
-
-   
 
    
     public function edit()
@@ -102,5 +98,3 @@ class CoffeeController
         require_once __DIR__ .'../../../templates/liste.php';
     }
 }
-
-

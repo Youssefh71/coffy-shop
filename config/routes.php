@@ -12,10 +12,11 @@ switch ($uri) {
         $controller->insert();
         break;
         // Affiche tous les Coffee
-    case '/liste':
-        $controller = new CoffeeController();
-        $controller->liste();
-        break;
+        case '/liste':
+            $controller = new CoffeeController();
+           
+            $controller->liste();
+            break;
         // Supprimer un coffee
     case '/delete/coffee':
         $controller = new CoffeeController();
