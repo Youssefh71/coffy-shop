@@ -15,13 +15,19 @@ class CoffeeController
         // Si le formulaire est envoyé, la superglobale $_POST est
         // remplie des données du formulaire
         if (!empty($_POST)) {
+
+           // var_dump($_POST);
             
             // Envoyer les infos du formulaire à la classe Avis
             // Instancier l'entité Avis
             $entity = new Entity\Coffee();
-            $entity->setName(htmlspecialchars(strip_tags($_POST['coffee'])));
-            $entity->setDescription(htmlspecialchars(strip_tags($_POST['coffee'])));
-            $entity->setRecette(htmlspecialchars(strip_tags($_POST['coffee'])));
+           // var_dump($entity);
+            var_dump($_POST['coffee']);
+            
+            $entity->setName(htmlspecialchars(strip_tags($_POST['name'])));
+            $entity->setDescription(htmlspecialchars(strip_tags($_POST['description'])));
+            $entity->setRecette(htmlspecialchars(strip_tags($_POST['recette'])));
+            $entity->setImage(htmlspecialchars(strip_tags($_POST['image'])));
             
 
 
