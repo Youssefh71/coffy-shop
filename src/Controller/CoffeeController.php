@@ -43,6 +43,13 @@ class CoffeeController
         require_once __DIR__ . '../../../templates/add.php';
     }
 
+
+    public function display()
+    {
+
+        require_once __DIR__ . '../../../templates/index.php';
+    }
+
    
 }
 
