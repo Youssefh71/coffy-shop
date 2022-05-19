@@ -18,16 +18,16 @@ class CoffeeController
             
             // Envoyer les infos du formulaire à la classe Avis
             // Instancier l'entité Avis
-            $entity = new Entity\Coffee();
-            $entity->setName(htmlspecialchars(strip_tags($_POST['coffee'])));
-            $entity->setDescription(htmlspecialchars(strip_tags($_POST['coffee'])));
-            $entity->setRecette(htmlspecialchars(strip_tags($_POST['coffee'])));
+            $coffee = new Entity\Coffee();
+            $coffee->setName(htmlspecialchars(strip_tags($_POST['name'])));
+            $coffee->setDescription(htmlspecialchars(strip_tags($_POST['description'])));
+            $coffee->setRecette(htmlspecialchars(strip_tags($_POST['recettes'])));
             
 
 
             // Insertion en BDD
             $coffeeRepository = new CoffeeRepository();
-            $success = $coffeeRepository->add($entity);
+            $success = $coffeeRepository->add($coffee);
         }
 
         // La vue correspondant à ce controller
