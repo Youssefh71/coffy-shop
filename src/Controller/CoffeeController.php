@@ -7,8 +7,8 @@ class CoffeeController
 {
 
     /**
-     * Formulaire permettant d'ajouter un avis
-     * URL d'accès : http://avis.test
+     * Formulaire permettant d'ajouter un un type de café
+     * URL d'accès : http://
      */
     public function insert()
     {
@@ -18,8 +18,8 @@ class CoffeeController
 
            // var_dump($_POST);
             
-            // Envoyer les infos du formulaire à la classe Avis
-            // Instancier l'entité Avis
+            // Envoyer les infos du formulaire à la classe Coffee
+            // Instancier l'entité Coffee
 
            
 
@@ -43,6 +43,7 @@ class CoffeeController
         require_once __DIR__ . '../../../templates/add.php';
     }
 
+<<<<<<< HEAD
     public function liste()
     {
         $coffeeRepository = new coffeeRepository();
@@ -62,6 +63,18 @@ class CoffeeController
         // Redirige l'utilisateur vers la route "/liste"
         header('Location: /index?delete=' . $success);
     }
+=======
+    /**
+     * Formulaire permettant d'ajouter un un type de café
+     * URL d'accès : http://coffy-shop.test/
+     */
+    public function display()
+    {
+
+        require_once __DIR__ . '../../../templates/index.php';
+    }
+
+>>>>>>> 28a7d1c08d45c22864ea6a6b2f36db8bae46155c
    
     public function edit()
     {
