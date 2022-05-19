@@ -1,80 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poste ton avis !</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title>Coffee WF3 Shop</title>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="w-50 mx-auto pt-5">
-    <a href="/liste">Voir tous les avis</a>
-
-        <?php if (isset($_GET['delete']) && $_GET['delete']) : ?>
-            <div class="alert alert-success">
-                La suppression à bien été effectuée
-            </div>
-        <?php endif; ?>
-
-        <?php if (isset($_GET['edit']) && $_GET['edit']) : ?>
-            <div class="alert alert-success mt-5">
-                L'édition à bien été effectuée
-            </div>
-        <?php endif; ?>
-
-
-        <table class="table mt-5">
-            <thead>
-                <tr>
-                   
-                    <th scope="col">name</th>
-                    <th scope="col">description</th>
-                    <th scope="col">recette</th>
-                    <th scope="col">image</th>
-                    <th scope="col">price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach ($listCoffee as $coffee) : ?>
-                    <tr>
-                        <th scope="row"><?php echo $coffee->getId(); ?></th>
-                        <td><?php echo $coffee->getName(); ?></td>
-                        <td><?php echo $coffee->getDescription(); ?></td>
-                        <td><?php echo $coffee->getRecette(); ?></td>
-                        <td><?php echo $coffee->getImage(); ?></td>
-                        <td><?php echo $coffee->getPrice(); ?></td>
-
-                        <td>
-                            <!-- http://av -->
-                            <a href="/delete/coffee?id=<?php echo $coffee->getId(); ?>" class="btn btn-outline-danger">
-                                Supprimer cet avis
-                            </a>
-                        </td>
-                        <td>
-                            <!-- http://av -->
-                            <a href="/edit/coffee?id=<?php echo $coffee->getId(); ?>" class="btn btn-outline-secondary">
-                                Edit
-                            </a>
-                        </td>
-                    </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
-    </div>
-</body>
+  <div class="container">
 
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <title>Edition coffee</title>
-</head>
-<body>
- <div class="row">
+    <form action="" method="post" enctype="multipart/form-data" class="w-70 mx-auto">
+
+
+                   
+      <div class="form-group">
+        <label for="formGroupExampleInput">Name</label>
+        <input type="text" class="form-control mb-3" id="formGroupExampleInput" id="name" name="name">
+      </div>
+
+      <div class="form-floating mb-3">
+        <p>Description</p>
+        <textarea class="form-control" placeholder="Contenu" id="floatingTextarea2" style="height: 300px" name="description"></textarea>
+        <label for="floatingTextarea2"></label>
+      </div>
+
+      <div class="row">
+        <div class="image col-lg-6">
+          <p>Image</p>
+          <div>
+            <input type="text" name="image" class="form-control-file mb-3" id="image">
+    </div>
+          <p>L'image ne doit pas dépasser les 1Mo.</p>
+        </div>
+
+        <div class="categorie mb-3 col-lg-6">
+          <p>Recettes</p>
+          <textarea type="text" class="form-control mb-3" id="formGroupExampleInput" id="recettes" name="recettes">     </textarea>
+
+        </div>
      
+        <div class="categorie mb-3 col-lg-6">
+         <label for="formGroupExampleInput">Price</label>
+          <input type="text" name="price" class="form-control-file mb-3" id="price">
      
  </div>
+      </div>
+      <button type="" class="btn btn-warning">Modify</button>
+    </form>
     
+  </div>
 </body>
 </html>
