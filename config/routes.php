@@ -18,14 +18,10 @@ switch ($uri) {
         // Charge la méthode correspondant à la vue souhaitée
         $controller->insert();
         break;
-<<<<<<< HEAD
+
         // Affiche tous les Coffee
         case '/liste':
             $controller = new CoffeeController();
-<<<<<<< HEAD
-           
-=======
->>>>>>> 3bee6df30bde0115668815e453d72a706690f12e
             $controller->liste();
             break;
         // Supprimer un coffee
