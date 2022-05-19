@@ -54,6 +54,12 @@ nav {
     border: none;
 }
 
+.card a {
+    color: var(--black);
+    font-family: var(--title-font-family);
+  
+}
+
 .card-text {
     font-family: var(--text-font-family);
 }
