@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coffee WF3 Shop</title>
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -22,7 +22,7 @@
     <form action="" method="post" enctype="multipart/form-data" class="w-70 mx-auto">
 
 
-                   
+
       <div class="form-group">
         <label for="formGroupExampleInput">Name</label>
         <input type="text" class="form-control mb-3" id="formGroupExampleInput" id="name" name="name">
@@ -39,7 +39,7 @@
           <p>Image</p>
           <div>
             <input type="text" name="image" class="form-control-file mb-3" id="image">
-    </div>
+          </div>
           <p>L'image ne doit pas dépasser les 1Mo.</p>
         </div>
 
@@ -48,16 +48,16 @@
           <textarea type="text" class="form-control mb-3" id="formGroupExampleInput" id="recettes" name="recettes">     </textarea>
 
         </div>
-     
+
         <div class="categorie mb-3 col-lg-6">
          <label for="formGroupExampleInput">Price</label>
           <input type="text" name="price" class="form-control-file mb-3" id="price">
-     
- </div>
+
+        </div>
       </div>
       <button type="" class="btn btn-warning">Modify</button>
     </form>
-    
+
   </div>
 </body>
 </html>
