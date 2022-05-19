@@ -48,7 +48,7 @@ class CoffeeController
         $coffeeRepository = new coffeeRepository();
         $listCoffee = $coffeeRepository->selectAll();
 
-        require_once __DIR__ . '../../../templates/index.php';
+        require_once __DIR__ . '../../../templates/display.php';
     }
     public function delete()
     {
@@ -60,7 +60,7 @@ class CoffeeController
         $success = $coffeeRepository->remove($_GET['id']);
 
         // Redirige l'utilisateur vers la route "/liste"
-        header('Location: /index?delete=' . $success);
+        header('Location: /display?delete=' . $success);
     }
     /**
      * Formulaire permettant d'ajouter un un type de café
@@ -69,22 +69,10 @@ class CoffeeController
     public function display()
     {
 
-        require_once __DIR__ . '../../../templates/index.php';
+        require_once __DIR__ . '../../../templates/display.php';
     }
 
-    public function delete()
-    {
-        // var_dump($_GET['id']);
-
-        // Appelle la méthode de suppression dans le repository en lui passant
-        // l'ID de l'enregistrement à supprimer
-        $coffeeRepository = new CoffeeRepository();
-        $success = $coffeeRepository->remove($_GET['id']);
-
-        // Redirige l'utilisateur vers la route ""
-        header('Location: /?delete='. $success);
-    }
-    
+   
     public function edit()
     {
         // var_dump($_GET['id']);
@@ -93,25 +81,20 @@ class CoffeeController
 
         // Si le formulaire est envoyé
         if (!empty($_POST)) {
-            // Ecrase l'ancien contenu de l'objet "" par celui du formulaire
-            $coffee->setContent(htmlspecialchars(strip_tags($_POST['name'])));
-            $coffee->setContent(htmlspecialchars(strip_tags($_POST['description'])));
-            $coffee->setContent(htmlspecialchars(strip_tags($_POST['recettes'])));
-            $coffee->setContent(htmlspecialchars(strip_tags($_POST['image'])));
-            $coffee->setContent(htmlspecialchars(strip_tags($_POST['price'])));
+            // Ecrase l'ancien contenu de l'objet "Avis" par celui du formulaire
+            $coffee->setName(htmlspecialchars(strip_tags($_POST['name'])));
+            $coffee->setDescription(htmlspecialchars(strip_tags($_POST['description'])));
+            $coffee->setRecette(htmlspecialchars(strip_tags($_POST['recette'])));
+            $coffee->setImage(htmlspecialchars(strip_tags($_POST['image'])));
+            $coffee->setPrice(htmlspecialchars(strip_tags($_POST['price'])));
 
             // Transmet cet objet à une méthode du repository pour mise à jour
-            $success = $avisRepository->update($avis);
+            $success = $coffeeRepository->update($coffee);
 
             // Redirige l'utilisateur vers la tableau
-            header('Location: /?edit='. $success);
+            header('Location: /display?edit='. $success);
         }
 
         require_once __DIR__ .'../../../templates/edit.php';
     }
-
-   
-    
 }
-
-
