@@ -45,6 +45,12 @@
           <textarea type="text" class="form-control mb-3" id="formGroupExampleInput" id="recettes" name="recettes">     </textarea>
 
         </div>
+
+        <div class="categorie mb-3 col-lg-6">
+         <label for="formGroupExampleInput">Price</label>
+          <input type="text" name="price" class="form-control-file mb-3" id="price">
+
+        </div>
       </div>
       <button type="" class="btn btn-warning">Enregistrer l'article</button>
     </form>
