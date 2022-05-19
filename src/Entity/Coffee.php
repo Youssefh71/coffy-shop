@@ -7,7 +7,7 @@
 namespace Entity;
 
 /**
- * Cette classe représente l'architecture de la table SQL "avis"
+ * Cette classe représente l'architecture de la table SQL "Coffee"
  */
 class Coffee {
 
