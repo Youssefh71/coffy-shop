@@ -20,55 +20,36 @@
    <?php require_once 'carousel.php' ?>
   
         <main class="py-5">
-            <div class="container">
-                <!-- <div>
-                    Title !
-                    <a href="" title=""></a>
-                </div> -->
-
-
-                <!-- beginning card -->
-
-                <div class="row ">
-                    <div class="card-container col-12 col-lg-6 pb-5">
-
-
-                        <article class="">
-                            <a href="/" title="My coffee shop " class="text-dark text-decoration-none">
-                                <img src="img/3coffee.png" alt="card img " class="w-100 rounded">
-                                <h1 class="pt-2">My Coffee</h1>
-                            </a>
-                            <p class="text-dark card-text">Description Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae saepe minus quos fugit inventore quisquam nulla possimus at dignissimos. Enim quo, doloribus saepe reprehenderit minus libero porro! Nesciunt, amet magni.
-                            </p>
-                            <p class="py-2 card-text">Recette Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt necessitatibus repellendus dolores laudantium error. Reprehenderit perspiciatis voluptatem cumque corrupti nostrum voluptates illo nam nesciunt vitae, iste maiores voluptas, adipisci neque. 
-                            </p>
-                            <div class="d-flex align-items-center gap-2">
-                                <a href="" title="" class="badge rounded-pill bg-primary text-decoration-none">hello
-                                </a>
+            <div class="container">           
+            
+                    
+                    <div class="row">
+                        <div class="col-lg-6 card " >
+                            <div class="col d-flex justify-content-center">
+                            <img src="https://www.starbucks.fr/sites/starbucks-fr/files/styles/c04_image_text_grid_600x600/public/2020-07/Starbucks_FR_Deliveroo_1200x1200_Hot_Drinks_Chai_Tea_Latte.jpg.webp?itok=Mxb764XZ" alt="card img" class="card-img-top card-img" alt="...">
                             </div>
-
-                            <div class="d-flex align-items-center gap-2">
-                                <a href="/edit/coffee?id=<?php echo $coffee->getId(); ?>" title="" class="badge rounded-pill bg-primary text-decoration-none">edit
-                                </a>
+                            <div class="card-body ">
+                                <div class="card-body-content">
+                                    <h5 class="card-title text-center">Caffè Latte</h5>
+                                    <p class="card-text text-center">20 &euro;</p>
+                                    <!-- <a href="#" class="btn btn-primary ">Go somewhere</a> -->
+                                </div>
                             </div>
-                            <div>
-                                <a href="">hello2</a>
-                            <a href="/edit/coffee?id=<?php echo $coffee->getId(); ?>" class="btn btn-outline-secondary">
-                                Edit
-                            </a>
+                        </div>
+
+                        <div class="col-lg-6 card " >
+                            <div class="col d-flex justify-content-center">
+                            <img src="https://www.starbucks.fr/sites/starbucks-fr/files/styles/c04_image_text_grid_600x600/public/2020-07/Starbucks_FR_Deliveroo_1200x1200_Hot_Drinks_Chai_Tea_Latte.jpg.webp?itok=Mxb764XZ" alt="card img" class="card-img-top card-img" alt="...">
                             </div>
-
-
-                     
+                            <div class="card-body ">
+                                <div class="card-body-content">
+                                    <h5 class="card-title text-center">Caffè Latte</h5>
+                                    <p class="card-text text-center">20 &euro;</p>
+                                    <!-- <a href="#" class="btn btn-primary ">Go somewhere</a> -->
+                                </div>
                             </div>
-                        </article>
-
-                    </div>
-
-
-                </div>
-
-                          <!-- end card -->
+                        </div>
+                    </div>  
 
             </div>
         </main>

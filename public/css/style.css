@@ -23,18 +23,16 @@
     
 }
 
-/* body {
-    font-family: 'Lexend Zetta', sans-serif;
-    font-family: 'Poppins', sans-serif;
-} */
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
 
 .menu {
     font-family: var(--text-font-family);
     font-weight: 400;
     font-size: 1.2rem ;
 }
-
-
 
 .img-logo {
     width: 100px;
@@ -48,10 +46,36 @@ nav {
     background-color: var(--white);
 }
 
+
+/* Product card */
+
+.card {
+    /* border: 1px solid var(--blue); */
+    border: none;
+}
+
 .card-text {
     font-family: var(--text-font-family);
 }
 
-.card-container {
-    background-color: var(--pale-cyan-blue) !important;
+.card-img {
+    width: 70%;
+    justify-content: center;
 }
+
+.card-body {
+    background-color: var(--blue);
+    height: 30vh;
+    position: relative;
+}
+
+.card-body-content {
+    /* padding-top: 100px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
