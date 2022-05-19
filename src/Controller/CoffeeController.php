@@ -5,6 +5,15 @@ require_once __DIR__ . '../../Entity/Coffee.php';
 
 class CoffeeController
 {
+/**
+     * Accés à la page d'acceuil
+     * URL d'accès : http://coffy-shop.test/
+     */
+    public function index()
+    {
+
+        require_once __DIR__ . '../../../templates/index.php';
+    }
 
     /**
      * Formulaire permettant d'ajouter un un type de café
