@@ -13,11 +13,12 @@ class CoffeeRepository extends Db {
      */
     public function add(Entity\Coffee $coffee)
     {
-        $query = $this->getDb()->prepare('INSERT INTO coffee (name, description, recette, image) VALUES (:name, :description, :recette, :image)');
+        $query = $this->getDb()->prepare('INSERT INTO coffee (name, description, recette, image, price) VALUES (:name, :description, :recette, :image, :price)');
         $query->bindValue(':name', $coffee->getName());
         $query->bindValue(':description', $coffee->getDescription());
         $query->bindValue(':recette', $coffee->getRecette());
         $query->bindValue(':image', $coffee->getImage());
+        $query->bindValue(':price', $coffee->getPrice());
 
         return $query->execute();
     }

@@ -16,6 +16,7 @@ class Coffee {
     private string $description;
     private string $recette;
     private string $image;
+    private float $price;
 
 
     /**
@@ -114,6 +115,26 @@ class Coffee {
     public function setImage(string $image)
     {
         $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of price
+     */ 
+    public function getPrice()
+    {
+        return $this->price;
+    }
+
+    /**
+     * Set the value of price
+     *
+     * @return  self
+     */ 
+    public function setPrice(float $price)
+    {
+        $this->price = $price;
 
         return $this;
     }
