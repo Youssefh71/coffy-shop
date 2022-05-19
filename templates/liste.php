@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-
-=======
->>>>>>> 2ba3cad7fd26875cbdf5f5c53b3dc648a4a78d98
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <title>Poste ton avis !</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
@@ -42,24 +37,24 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($listCoffee as $coffee) : ?>
+                <?php foreach ($coffee as $coffe) : ?>
                     <tr>
                         <th scope="row"><?php echo $coffee->getId(); ?></th>
-                        <td><?php echo $coffee->getName(); ?></td>
-                        <td><?php echo $coffee->getDescription(); ?></td>
-                        <td><?php echo $coffee->getRecette(); ?></td>
-                        <td><?php echo $coffee->getImage(); ?></td>
-                        <td><?php echo $coffee->getPrice(); ?></td>
+                        <td><?php echo $coffe->getName(); ?></td>
+                        <td><?php echo $coffe->getDescription(); ?></td>
+                        <td><?php echo $coffe->getRecette(); ?></td>
+                        <td><?php echo $coffe->getImage(); ?></td>
+                        <td><?php echo $coffe->getPrice(); ?></td>
 
                         <td>
                             <!-- http://av -->
-                            <a href="/delete/coffee?id=<?php echo $coffee->getId(); ?>" class="btn btn-outline-danger">
+                            <a href="/delete/coffee?id=<?php echo $coffe->getId(); ?>" class="btn btn-outline-danger">
                                 Supprimer cet avis
                             </a>
                         </td>
                         <td>
                             <!-- http://av -->
-                            <a href="/edit/coffee?id=<?php echo $coffee->getId(); ?>" class="btn btn-outline-secondary">
+                            <a href="/edit/coffee?id=<?php echo $coffe->getId(); ?>" class="btn btn-outline-secondary">
                                 Edit
                             </a>
                         </td>
@@ -70,18 +65,4 @@
     </div>
 </body>
 
-=======
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
-    <title>Edition coffee</title>
-</head>
-<body>
- <div class="row">
-     
-     
- </div>
-    
-</body>
->>>>>>> 2ba3cad7fd26875cbdf5f5c53b3dc648a4a78d98
 </html>
