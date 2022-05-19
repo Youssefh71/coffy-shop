@@ -24,12 +24,12 @@
 
       <div class="form-group">
         <label for="formGroupExampleInput">Name</label>
-        <input type="text" class="form-control mb-3" id="formGroupExampleInput" id="name" name="name">
+        <input type="text" class="form-control mb-3" id="formGroupExampleInput" id="name" name="name" value="<?php echo $listCoffee->getName(); ?>">
       </div>
 
       <div class="form-floating mb-3">
         <p>Description</p>
-        <textarea class="form-control" placeholder="Contenu" id="floatingTextarea2" style="height: 300px" name="description"></textarea>
+        <textarea class="form-control" placeholder="Contenu" id="floatingTextarea2" style="height: 300px" name="description"><?php echo $listCoffee->getDescription(); ?>"</textarea>
         <label for="floatingTextarea2"></label>
       </div>
 
@@ -37,20 +37,19 @@
         <div class="image col-lg-6">
           <p>Image</p>
           <div>
-            <input type="text" name="image" class="form-control-file mb-3" id="image">
+            <input type="text" name="image" class="form-control-file mb-3" id="image" value="<?php echo $listCoffee->getImage(); ?>">
           </div>
-          <p>L'image ne doit pas dépasser les 1Mo.</p>
         </div>
 
         <div class="categorie mb-3 col-lg-6">
           <p>Recettes</p>
-          <textarea type="text" class="form-control mb-3" id="formGroupExampleInput" id="recettes" name="recettes">     </textarea>
+          <textarea type="text" class="form-control mb-3" id="formGroupExampleInput" id="recettes" name="recettes"><?php echo $listCoffee->getRecette(); ?></textarea>
 
         </div>
 
         <div class="categorie mb-3 col-lg-6">
          <label for="formGroupExampleInput">Price</label>
-          <input type="text" name="price" class="form-control-file mb-3" id="price">
+          <input type="text" name="price" class="form-control-file mb-3" id="price" value="<?php echo $listCoffee->getPrice(); ?>">
 
         </div>
       </div>
