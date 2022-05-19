@@ -52,10 +52,6 @@ class CoffeeController
         require_once __DIR__ . '../../../templates/add.php';
     }
 
-<<<<<<< HEAD
-    
-    
-=======
     public function liste()
     {
         $coffeeRepository = new coffeeRepository();
@@ -110,5 +106,4 @@ class CoffeeController
 
         require_once __DIR__ .'../../../templates/liste.php';
     }
->>>>>>> 2b95992903c78fb3caf9d0ee8b3f5e4d80dbbfde
 }
