@@ -43,7 +43,6 @@ class CoffeeController
         require_once __DIR__ . '../../../templates/add.php';
     }
 
-<<<<<<< HEAD
     public function liste()
     {
         $coffeeRepository = new coffeeRepository();
@@ -63,7 +62,6 @@ class CoffeeController
         // Redirige l'utilisateur vers la route "/liste"
         header('Location: /index?delete=' . $success);
     }
-=======
     /**
      * Formulaire permettant d'ajouter un un type de café
      * URL d'accès : http://coffy-shop.test/
@@ -74,7 +72,6 @@ class CoffeeController
         require_once __DIR__ . '../../../templates/index.php';
     }
 
-<<<<<<< HEAD
     public function delete()
     {
         // var_dump($_GET['id']);
@@ -113,35 +110,8 @@ class CoffeeController
         require_once __DIR__ .'../../../templates/edit.php';
     }
 
-
-=======
->>>>>>> 28a7d1c08d45c22864ea6a6b2f36db8bae46155c
->>>>>>> 90edde69c732ce856c3dc49978b4a1633a9edf15
    
-    public function edit()
-    {
-        // var_dump($_GET['id']);
-        $coffeeRepository = new CoffeeRepository();
-        $coffee = $coffeeRepository->selectOne($_GET['id']);
-
-        // Si le formulaire est envoyé
-        if (!empty($_POST)) {
-            // Ecrase l'ancien contenu de l'objet "Avis" par celui du formulaire
-            $coffee->setName(htmlspecialchars(strip_tags($_POST['name'])));
-            $coffee->setDescription(htmlspecialchars(strip_tags($_POST['description'])));
-            $coffee->setRecette(htmlspecialchars(strip_tags($_POST['recette'])));
-            $coffee->setImage(htmlspecialchars(strip_tags($_POST['image'])));
-            $coffee->setPrice(htmlspecialchars(strip_tags($_POST['price'])));
-
-            // Transmet cet objet à une méthode du repository pour mise à jour
-            $success = $coffeeRepository->update($coffee);
-
-            // Redirige l'utilisateur vers la tableau
-            header('Location: /index?edit='. $success);
-        }
-
-        require_once __DIR__ .'../../../templates/edit.php';
-    }
+    
 }
 
 
