@@ -21,12 +21,11 @@ class CoffeeController
             // Envoyer les infos du formulaire à la classe Avis
             // Instancier l'entité Avis
             $entity = new Entity\Coffee();
-           // var_dump($entity);
-            var_dump($_POST['coffee']);
-            
+
+            var_dump($entity);
             $entity->setName(htmlspecialchars(strip_tags($_POST['name'])));
             $entity->setDescription(htmlspecialchars(strip_tags($_POST['description'])));
-            $entity->setRecette(htmlspecialchars(strip_tags($_POST['recette'])));
+            $entity->setRecette(htmlspecialchars(strip_tags($_POST['recettes'])));
             $entity->setImage(htmlspecialchars(strip_tags($_POST['image'])));
             
 
