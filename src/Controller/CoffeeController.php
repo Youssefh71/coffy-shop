@@ -80,6 +80,13 @@ class CoffeeController
 
         require_once __DIR__ . '../../../templates/liste.php';
     }
+    public function article()
+    {
+        $coffeeRepository = new CoffeeRepository();
+        $coffee = $coffeeRepository->selectOne($_GET['id']);
+
+        require_once __DIR__ . '../../../templates/article.php';
+    }
 
    
     public function edit()
