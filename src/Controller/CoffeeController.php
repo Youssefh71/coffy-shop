@@ -86,24 +86,24 @@ class CoffeeController
     {
         // var_dump($_GET['id']);
         $coffeeRepository = new CoffeeRepository();
-        $coffee = $coffeeRepository->selectOne($_GET['id']);
+        $listCoffee = $coffeeRepository->selectOne($_GET['id']);
 
         // Si le formulaire est envoyé
         if (!empty($_POST)) {
             // Ecrase l'ancien contenu de l'objet "Avis" par celui du formulaire
-            $coffee->setName(htmlspecialchars(strip_tags($_POST['name'])));
-            $coffee->setDescription(htmlspecialchars(strip_tags($_POST['description'])));
-            $coffee->setRecette(htmlspecialchars(strip_tags($_POST['recette'])));
-            $coffee->setImage(htmlspecialchars(strip_tags($_POST['image'])));
-            $coffee->setPrice(htmlspecialchars(strip_tags($_POST['price'])));
+            $listCoffee->setName(htmlspecialchars(strip_tags($_POST['name'])));
+            $listCoffee->setDescription(htmlspecialchars(strip_tags($_POST['description'])));
+            $listCoffee->setRecette(htmlspecialchars(strip_tags($_POST['recette'])));
+            $listCoffee->setImage(htmlspecialchars(strip_tags($_POST['image'])));
+            $listCoffee->setPrice(htmlspecialchars(strip_tags($_POST['price'])));
 
             // Transmet cet objet à une méthode du repository pour mise à jour
-            $success = $coffeeRepository->update($coffee);
+            $success = $coffeeRepository->update($listCoffee);
 
             // Redirige l'utilisateur vers la tableau
-            header('Location: /display?edit='. $success);
+            header('Location: /liste?edit='. $success);
         }
 
-        require_once __DIR__ .'../../../templates/liste.php';
+        require_once __DIR__ .'../../../templates/edit.php';
     }
 }

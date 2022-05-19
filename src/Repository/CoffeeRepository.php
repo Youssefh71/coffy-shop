@@ -40,8 +40,7 @@ class CoffeeRepository extends Db
             $objects[] = $coffeeObject;
         }
 
-       return $objects ?? [];
-     
+        return $objects ?? [];
     }
     public function remove(int $id)
     {
@@ -83,8 +82,7 @@ class CoffeeRepository extends Db
         $query->bindValue(':recette', $coffee->getRecette());
         $query->bindValue(':image', $coffee->getImage());
         $query->bindValue(':price', $coffee->getPrice());
-
+        
         return $query->execute();
     }
-
 }
