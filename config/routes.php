@@ -23,12 +23,6 @@ switch ($uri) {
         // Charge la méthode correspondant à la vue souhaitée
         $controller->insert();
         break;
-<<<<<<< HEAD
-=======
-
-           
-=======
->>>>>>> 3bee6df30bde0115668815e453d72a706690f12e
            
 
     // Supprimer un coffee
