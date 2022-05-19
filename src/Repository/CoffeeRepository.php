@@ -27,7 +27,6 @@ class CoffeeRepository extends Db
     {
         $query = $this->getDb()->query('SELECT * FROM coffee');
         $allcoffee = $query->fetchAll();
-
         // Boucle sur les données reçues de la requête SQL
         foreach ($allcoffee as $coffee) {
             $coffeeObject = new Entity\Coffee();
@@ -37,12 +36,12 @@ class CoffeeRepository extends Db
             $coffeeObject->setRecette($coffee['recette']);
             $coffeeObject->setImage($coffee['image']);
             $coffeeObject->setPrice($coffee['price']);
-
             // Stock chaque objet avis dans un tableau
             $objects[] = $coffeeObject;
         }
 
-        return $objects ?? [];
+       return $objects ?? [];
+     
     }
     public function remove(int $id)
     {

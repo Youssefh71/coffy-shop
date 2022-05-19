@@ -49,7 +49,7 @@ class CoffeeController
         $coffeeRepository = new coffeeRepository();
         $listCoffee = $coffeeRepository->selectAll();
 
-        require_once __DIR__ . '../../../templates/display.php';
+        require_once __DIR__ . '../../../templates/liste.php';
     }
     public function delete()
     {
@@ -61,7 +61,7 @@ class CoffeeController
         $success = $coffeeRepository->remove($_GET['id']);
 
         // Redirige l'utilisateur vers la route "/liste"
-        header('Location: /display?delete=' . $success);
+        header('Location: /liste?delete=' . $success);
     }
 
     /**
@@ -71,7 +71,7 @@ class CoffeeController
     public function display()
     {
 
-        require_once __DIR__ . '../../../templates/display.php';
+        require_once __DIR__ . '../../../templates/liste.php';
     }
 
    
@@ -99,7 +99,7 @@ class CoffeeController
             header('Location: /display?edit='. $success);
         }
 
-        require_once __DIR__ .'../../../templates/edit.php';
+        require_once __DIR__ .'../../../templates/liste.php';
     }
 }
 
