@@ -20,7 +20,7 @@
 
   <?php require_once 'navigation.php' ?>
 
-  <div class="row">
+  <div class="row justify-content-center">
 
     <div class="col-6  text-center">
 
@@ -28,7 +28,7 @@
 
 
     </div>
-    <div class="col-6 ">
+    <div class="col-6 w-25">
 
 
       <form action="" method="post" enctype="multipart/form-data" class="w-70 mx-auto">
@@ -46,26 +46,29 @@
           <label for="floatingTextarea2"></label>
         </div>
 
-        <div class="row">
-          <div class="image col-lg-6">
-            <p>Image</p>
-            <div>
-              <input type="text" name="image" class="form-control-file mb-3" id="image" value="<?php echo $listCoffee->getImage(); ?>">
-            </div>
-          </div>
+        <div class="categorie mb-3 ">
+          <p>Recettes</p>
+          <textarea type="text" class="form-control mb-3" id="formGroupExampleInput" id="recettes" name="recettes"><?php echo $listCoffee->getRecette(); ?></textarea>
 
-          <div class="categorie mb-3 col-lg-6">
-            <p>Recettes</p>
-            <textarea type="text" class="form-control mb-3" id="formGroupExampleInput" id="recettes" name="recettes"><?php echo $listCoffee->getRecette(); ?></textarea>
+        </div>
 
-          </div>
 
-          <div class="categorie mb-3 col-lg-6">
-            <label for="formGroupExampleInput">Price</label>
-            <input type="text" name="price" class="form-control-file mb-3" id="price" value="<?php echo $listCoffee->getPrice(); ?>">
-
+        <div class="image">
+          <p>Image</p>
+          <div>
+            <input type="text" name="image" class="form-control-file mb-3" id="image" value="<?php echo $listCoffee->getImage(); ?>">
           </div>
         </div>
+
+        <div class="categorie mb-3">
+          <p>Price</p>          
+
+        </div>
+        
+         <div>
+         <input type="text" name="price" class="form-control-file mb-3" id="price" value="<?php echo $listCoffee->getPrice(); ?>">
+         </div>
+
         <button type="" class="btn btn-warning">Modify</button>
       </form>
 
