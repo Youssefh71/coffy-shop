@@ -11,6 +11,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <script src="../js/script.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
@@ -21,10 +22,10 @@
         <?php require_once 'navigation-color.php' ?>
 
     </div>
-    <div class="isset w-25 mx-auto pt-5">
+    <div class="isset w-25 mx-auto pt-5" id="suppression" >
         <?php if (isset($_GET['delete']) && $_GET['delete']) : ?>
             <div class="alert alert-success">
-                La suppression à bien été effectuée
+            La suppression à bien été effectuée
             </div>
         <?php endif; ?>
 
@@ -35,9 +36,7 @@
         <?php endif; ?>
 
     </div>
-
-
-
+    
     <main class="py-5">
 
         <div class="container ">
