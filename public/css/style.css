@@ -132,6 +132,10 @@ body {
     font-size: 0.6rem;
 }
 
+.form-control-file {
+    font-size: 0.6rem;
+}
+
 #modify {
 color: #fff;
 font-family: var(--title-font-family);
@@ -146,6 +150,9 @@ font-family: var(--title-font-family);
     width: 20%;
     margin: auto;    
    }
+  .error{
+      width: 50vw;
+  }
 
 /* Login */
 .form-container {

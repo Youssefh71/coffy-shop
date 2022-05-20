@@ -39,7 +39,7 @@
 
 
         <div class="form-group pt-5">
-          <label for="formGroupExampleInput" class="">Name</label>
+          <label for="formGroupExampleInput" class="mb-3">Name</label>
           <input type="text" class="form-control mb-3" id="formGroupExampleInput" id="name" name="name" value="<?php echo $listCoffee->getName(); ?>">
         </div>
 
