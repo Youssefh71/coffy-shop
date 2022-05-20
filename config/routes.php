@@ -12,7 +12,7 @@ switch ($uri) {
         $controller->index();
         break;
 
-    case '/liste':
+    case '/list':
         $controller = new CoffeeController();
         $controller->liste();
         break;
@@ -25,10 +25,10 @@ switch ($uri) {
         break;
 
         // Affiche tous les Coffee
-    case '/liste':
-        $controller = new CoffeeController();
-        $controller->liste();
-        break;
+    // case '/liste':
+    //     $controller = new CoffeeController();
+    //     $controller->liste();
+    //     break;
         // Article
     case '/article':
         $controller = new CoffeeController();

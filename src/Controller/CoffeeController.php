@@ -57,8 +57,10 @@ class CoffeeController
         $coffeeRepository = new coffeeRepository();
         $listCoffee = $coffeeRepository->selectAll();
 
-        require_once __DIR__ . '../../../templates/liste.php';
+       // var_dump($listCoffee);
+        require_once __DIR__ . '../../../templates/list.php';
     }
+
     public function delete()
     {
         // var_dump($_GET['id']);
@@ -80,6 +82,7 @@ class CoffeeController
 
         require_once __DIR__ . '../../../templates/liste.php';
     }
+    
     public function article()
     {
         $coffeeRepository = new CoffeeRepository();

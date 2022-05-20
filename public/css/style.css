@@ -28,24 +28,43 @@ body {
     box-sizing: border-box;
 }
 
-.menu {
-    font-family: var(--text-font-family);
-    font-weight: 400;
-    font-size: 1.2rem ;
+.container {
+    width: 60%;
+}
+
+/* Navigation Bar */
+
+.nav-white {
+    background-color: var(--white);
+}
+
+.nav-color {
+    background-color: var(--pale-green);
 }
 
 .img-logo {
     width: 100px;
 }
 
-.container {
-    width: 60%;
+.menu {
+    font-family: var(--title-font-family);
+    font-weight: 400;
+    font-size: 1.2rem ;
+} 
+
+.color-block {
+    background-color: var(--pale-green);
 }
 
-nav {
-    background-color: var(--white);
+/* Carousel */
+.carousel-item a {
+    color: var(--white);
+    text-decoration: none;
 }
 
+.carousel-item a:hover {
+    color: var(--pale-cyan-blue);
+}
 
 /* Product card */
 
@@ -54,10 +73,15 @@ nav {
     border: none;
 }
 
-.card a {
+.card-redirect {
     color: var(--black);
     font-family: var(--title-font-family);
-  
+    text-decoration: none;
+}
+
+.card-redirect:hover {
+    color: grey;
+
 }
 
 .card-text {
@@ -82,6 +106,17 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.card-body-icons {
+    position: absolute;
+    top: 85%;
+    left: 85%;
+    transform: translate(-50%, -50%);    
+}
+
+
+
+
 
 
 

@@ -22,7 +22,7 @@
                         <div class="row pt-lg-2 justify-content-center">
                             <div class="col-12 col-lg-4 text start text-lg-end">
                                 <p class="text-secondary m-0 fs-5 fw-bold text-center"<?php echo $coffee->getDescription(); ?></p>
-                                <img src="https://www.starbucks.fr/sites/starbucks-fr/files/styles/c04_image_text_grid_600x600/public/2020-09/Starbucks_FR_Website_600x600_Espresso.jpg.webp?itok=Scy5caUd" alt="Coffee">
+                                <img src="<?php echo $coffee->getImage(); ?>">
                                 <p class="text-start"><?php echo $coffee->getRecette(); ?></p>
                                 <p class="text-start mt-5"><?php echo $coffee->getPrice(); ?>€</p>
                                 <button class="btn btn-success" type="button">buy now</button>

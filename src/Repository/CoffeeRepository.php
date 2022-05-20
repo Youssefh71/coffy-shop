@@ -23,6 +23,7 @@ class CoffeeRepository extends Db
 
         return $query->execute();
     }
+
     public function selectAll()
     {
         $query = $this->getDb()->query('SELECT * FROM coffee');
@@ -40,7 +41,7 @@ class CoffeeRepository extends Db
             $objects[] = $coffeeObject;
         }
 
-        return $objects ?? [];
+            return $objects ?? [];
     }
     public function remove(int $id)
     {

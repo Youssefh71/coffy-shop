@@ -16,49 +16,11 @@
 </head>
 
 <body>
+
    <?php require_once 'navigation.php' ?>
-   <?php require_once 'carousel.php' ?>
-  
-        <main class="py-5">
-            <div class="container">           
-            
-                    
-                    <div class="row">
-                        <div class="col-lg-6 card " >
-                            <div class="col d-flex justify-content-center">
-                            <img src="https://www.starbucks.fr/sites/starbucks-fr/files/styles/c04_image_text_grid_600x600/public/2020-07/Starbucks_FR_Deliveroo_1200x1200_Hot_Drinks_Chai_Tea_Latte.jpg.webp?itok=Mxb764XZ" alt="card img" class="card-img-top card-img" alt="...">
-                            </div>
-                            <div class="card-body ">
-                                <a href="/add">
-                                <div class="card-body-content">
-                                    <h5 class="card-title text-center">Caffè Latte</h5>
-                                    <p class="card-text text-center">20 &euro;</p>
-                                    <!-- <a href="#" class="btn btn-primary ">Go somewhere</a> -->
-                                </div>
-                                </a>
-                            </div>
-                        </div>
+   <?php require_once 'carousel.php' ?>   
 
-                        <div class="col-lg-6 card " >
-                            <div class="col d-flex justify-content-center">
-                            <img src="https://www.starbucks.fr/sites/starbucks-fr/files/styles/c04_image_text_grid_600x600/public/2020-07/Starbucks_FR_Deliveroo_1200x1200_Hot_Drinks_Chai_Tea_Latte.jpg.webp?itok=Mxb764XZ" alt="card img" class="card-img-top card-img" alt="...">
-                            </div>
-                            <div class="card-body ">
-                                <a href="/add">
-                                <div class="card-body-content">
-                                    <h5 class="card-title text-center">Caffè Latte</h5>
-                                    <p class="card-text text-center">20 &euro;</p>
-                                    <!-- <a href="#" class="btn btn-primary ">Go somewhere</a> -->
-                                </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>  
-
-            </div>
-        </main>
-
-    </nav>
 </body>
-
 </html>
+
+
