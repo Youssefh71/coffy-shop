@@ -56,11 +56,6 @@ body {
     background-color: var(--pale-green);
 }
 
-<<<<<<< HEAD
-.container {
-    width: 60%;
-}
-=======
 /* Carousel */
 .carousel-item a {
     color: var(--white);
@@ -99,7 +94,7 @@ body {
 }
 
 .card-body {
-    background-color: var(--blue);
+    /* background-color: var(--blue); */
     height: 30vh;
     position: relative;
 }
@@ -125,4 +120,3 @@ body {
 
 
 
->>>>>>> 962afe4d107ad18a624ed6713ae5e59744827c01
