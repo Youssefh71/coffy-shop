@@ -113,6 +113,22 @@ body {
     transform: translate(-50%, -50%);    
 }
 
+#modify {
+ background: rgb(255, 198, 93);
+ border-radius: 10px;
+
+}
+
+.isset {
+    background-color: var(--);
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    
+   
+   }
+   
+
 
 
 

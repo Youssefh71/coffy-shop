@@ -12,17 +12,18 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/edit.css">
-
-
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
 
 <body >
 
-  <?php require_once 'navigation.php' ?>
 
-  <div class="row justify-content-center ">
+    <div class="color-block">
+      <?php require_once 'navigation-color.php' ?>
+    </div>
+   
+
+  <div class="row justify-content-center my-3 ">
 
     <div class="col-6  text-center opacity-75">
 
@@ -71,12 +72,14 @@
          <input type="text" name="price" class="form-control-file mb-3" id="price" value="<?php echo $listCoffee->getPrice(); ?>">
          </div>
 
-        <button type="" class="btn btn-warning">Modify</button>
+        <button type="submit" class="btn" id="modify">Modify</button>
       </form>
 
     </div>
 
   </div>
+
+  <?php require_once 'footer.php' ?>
 
 </body>
 
