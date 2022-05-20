@@ -25,7 +25,7 @@
 
   <div class="row justify-content-center my-3 ">
 
-    <div class="col-6 w-25">
+    <div class="col-6 w-50">
 
 
       <form action="" method="post" enctype="multipart/form-data" class="w-70 mx-auto">
