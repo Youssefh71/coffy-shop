@@ -23,7 +23,7 @@
     <main class="pt-5">
         <div class="container" <?php echo $coffee->getId(); ?>>
             <div class="row pt-4">
-                <div class="col-12 col-lg-12 pb-5">
+                <div class="col-12 col-lg-12 pb-5" >
                     <h2 class="h1 text-start text-lg-center"><?php echo $coffee->getName(); ?></h2>
                     <div class="row pt-lg-2 justify-content-center">
                         <div class="col-12 col-lg-4 text start text-lg-end">
@@ -49,4 +49,4 @@
 </body>
 
 
-</html>0
+</html>
