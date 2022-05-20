@@ -111,7 +111,7 @@ class CoffeeController
             $success = $coffeeRepository->update($listCoffee);
 
             // Redirige l'utilisateur vers la tableau
-            header('Location: /liste?edit='. $success);
+            header('Location: /list?edit='. $success);
         }
 
         require_once __DIR__ .'../../../templates/edit.php';

@@ -14,7 +14,6 @@
     --pale-cyan-blue: #8ed1fc;
     --vivid-cyan-blue: #0693e3;
     --vivid-purple: #9b51e0;
-
     --blue:  #d6eaf8;
     --pale-blue: #eaf2f8;  
     --pink :  #fdf2e9 ;
@@ -113,6 +112,22 @@ body {
     left: 85%;
     transform: translate(-50%, -50%);    
 }
+
+#modify {
+ background: rgb(255, 198, 93);
+ border-radius: 10px;
+
+}
+
+.isset {
+    background-color: var(--);
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    
+   
+   }
+   
 
 
 
