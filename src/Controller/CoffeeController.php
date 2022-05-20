@@ -117,4 +117,6 @@ class CoffeeController
 
         require_once __DIR__ .'../../../templates/edit.php';
     }
+
+    
 }
