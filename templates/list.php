@@ -44,30 +44,17 @@
 
             <!-- Product cards' block -->
 
-                <div class="row">
-                        
-                    <?php foreach ($listCoffee as $coffee): ?>
-
-                        <?php $colorCode = ['#d6eaf8', '#fdf2e9', '#fdebd0', '#eafaf1']; ?>
-
-                        <div class="col-lg-6 card " >
-                            <div class="col d-flex justify-content-center">
-                            <img src="<?php echo $coffee->getImage(); ?>" alt="<?php echo $coffee->getName(); ?>" class="card-img-top card-img" >
-                            </div>
-                            <div style="background-color: <?php echo $colorCode[rand(0, count($colorCode) - 1)] ?>;" class="card-body">
-
-                                <a href="/article/?id=<?php echo $coffee->getId(); ?>" class="card-redirect">
-                                    <div class="card-body-content">
-                                        <h5 class="card-title text-center"><?php echo $coffee->getName(); ?></h5>
-                                        <p class="card-text text-center"><?php echo $coffee->getPrice(); ?> &euro;</p>
-                                        <!-- <a href="#" class="btn btn-primary ">Go somewhere</a> -->
+            <div class="row">
 
                 <?php foreach ($listCoffee as $coffee) : ?>
+
+                    <?php $colorCode = ['#d6eaf8', '#fdf2e9', '#fdebd0', '#eafaf1']; ?>
+
                     <div class="col-lg-6 card ">
                         <div class="col d-flex justify-content-center">
                             <img src="<?php echo $coffee->getImage(); ?>" alt="<?php echo $coffee->getName(); ?>" class="card-img-top card-img">
                         </div>
-                        <div class="card-body ">
+                        <div style="background-color: <?php echo $colorCode[rand(0, count($colorCode) - 1)] ?>;" class="card-body ">
                             <a href="/article/?id=<?php echo $coffee->getId(); ?>" class="card-redirect">
                                 <div class="card-body-content">
                                     <h5 class="card-title text-center"><?php echo $coffee->getName(); ?></h5>

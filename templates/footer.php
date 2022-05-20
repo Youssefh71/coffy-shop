@@ -34,10 +34,5 @@
 
             </p>
 
-<<<<<<< HEAD
-    </section>
-        </div>
-=======
         </section>
     
->>>>>>> 66011bb2b0491e253c7b165f19b25a02c2169cef
