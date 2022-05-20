@@ -15,6 +15,7 @@ class CoffeeController
         require_once __DIR__ . '../../../templates/index.php';
     }
 
+    
     /**
      * Formulaire permettant d'ajouter un un type de café
      * URL d'accès : http://
@@ -64,7 +65,7 @@ class CoffeeController
         require_once __DIR__ . '../../../templates/list.php';
     }
 
-    public function delete()
+        public function delete()
     {
         // var_dump($_GET['id']);
 
@@ -117,4 +118,6 @@ class CoffeeController
 
         require_once __DIR__ .'../../../templates/edit.php';
     }
+
+    
 }

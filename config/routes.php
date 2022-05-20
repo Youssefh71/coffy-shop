@@ -2,6 +2,7 @@
 
 require_once '../src/Controller/CoffeeController.php';
 require_once '../src/Controller/ErrorController.php';
+require_once '../src/Controller/AdminController.php';
 
 
 switch ($uri) {
@@ -24,12 +25,6 @@ switch ($uri) {
         $controller->insert();
         break;
 
-        // Affiche tous les Coffee
-    // case '/liste':
-    //     $controller = new CoffeeController();
-    //     $controller->liste();
-    //     break;
-        // Article
     case '/article':
         $controller = new CoffeeController();
         $controller->article();
@@ -45,6 +40,18 @@ switch ($uri) {
         $controller = new CoffeeController();
         $controller->edit();
         break;
+
+    case '/admin':
+        $controller = new AdminController();
+        $controller->login();
+        break;
+
+    case '/admin/logout':
+        $controller = new AdminController();
+        $controller->logout();
+        break;
+
+
     default:
         //  echo '<h1>Erreur 404</h1>';
         $controller = new ErrorController();

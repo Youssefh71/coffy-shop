@@ -16,9 +16,18 @@
             <li class="nav-item">
               <a class="nav-link  menu"  href="/list">Produits</a>
             </li>
+
+            <?php if( isset($_SESSION['admin']) && $_SESSION['admin']['role'] === 'ROLE_ADMIN'): ?>
             <li class="nav-item">
               <a class="nav-link menu" href="/add">Ajouter</a>
             </li>
+
+       
+            <li class="nav-item">
+              <a class="nav-link menu" href="/admin/logout">Log out</a>
+            </li>
+            <?php endif; ?>
+
           </ul>          
         </div>
 
