@@ -132,6 +132,10 @@ body {
     font-size: 0.6rem;
 }
 
+.form-control-file {
+    font-size: 0.6rem;
+}
+
 #modify {
     color: #fff;
     font-family: var(--title-font-family);
