@@ -20,17 +20,17 @@
  
 <?php require_once 'navigation.php' ?>
 
-<div class="row justify-content-center">
-    <div class="col-12 ">
 
-        <form action="" method="post" class="">
-            <label for="code">Admin Code</label>
-            <input type="password" name="code" id="code">
-            <input type="submit" class="btn">
-        </form>
 
+    <div class="container form-container">
+            <form action="" method="post" class="myform">
+                <label for="code" class="form-label">Admin Code</label>
+                <input type="password" name="code" id="code" class="form-control">
+                <input type="submit" class="btn">
+            </form>
     </div>
-</div>
+
+
 
 <?php require_once 'footer.php' ?>
 </body>

@@ -128,10 +128,18 @@ body {
 .isset {
     text-align: center;
     width: 20%;
-    margin: auto;
-    
-   
+    margin: auto;    
    }
+
+/* Login */
+.form-container {
+    height: 60vh;
+}
+
+.myform {
+    padding: 7rem;
+    justify-content: center;
+}
 
 
    
