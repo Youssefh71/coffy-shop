@@ -13,7 +13,7 @@ abstract class Db {
     private const DB_USER = 'root';
 
     // Mot de passe
-    private const DB_PASS = 'developpe';
+    private const DB_PASS = '';
 
     // Nom de la base de données
     private const DB_NAME = 'coffee_wf3';
