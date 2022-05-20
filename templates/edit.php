@@ -23,7 +23,7 @@
   </div>
 
 
-  <div class="row justify-content-center my-3 ">
+  <div class="row justify-content-center my-3 pt-5">
 
     <div class="col-6  text-center opacity-75">
 
@@ -31,21 +31,21 @@
 
 
     </div>
-    <div class="col-6 w-25">
+    <div class="col-6 w-25 back">
 
 
-      <form action="" method="post" enctype="multipart/form-data" class="w-70 mx-auto">
+      <form action="" method="post" enctype="multipart/form-data" class=" best w-70 mx-auto">
 
 
 
-        <div class="form-group">
-          <label for="formGroupExampleInput">Name</label>
+        <div class="form-group pt-5">
+          <label for="formGroupExampleInput" class="">Name</label>
           <input type="text" class="form-control mb-3" id="formGroupExampleInput" id="name" name="name" value="<?php echo $listCoffee->getName(); ?>">
         </div>
 
         <div class="form-floating mb-3">
           <p>Description</p>
-          <textarea class="form-control" placeholder="Contenu" id="floatingTextarea2" style="height: 300px" name="description"><?php echo $listCoffee->getDescription(); ?>"</textarea>
+          <textarea class="form-control" placeholder="Contenu" id="floatingTextarea2" style="height: 100px" name="description"><?php echo $listCoffee->getDescription(); ?>"</textarea>
           <label for="floatingTextarea2"></label>
         </div>
 
@@ -60,6 +60,7 @@
           <p>Image</p>
           <div>
             <input type="text" name="image" class="form-control-file mb-3" id="image" value="<?php echo $listCoffee->getImage(); ?>">
+            
           </div>
         </div>
 
@@ -68,11 +69,17 @@
 
         </div>
 
-        <div>
+        <div class="row">
+          <div class="col-8">
           <input type="text" name="price" class="form-control-file mb-3" id="price" value="<?php echo $listCoffee->getPrice(); ?>">
+          </div>
+          <div class="col-3">
+          <button type="submit" class="btn" id="modify">Modify</button>
+          </div>
+          
         </div>
 
-        <button type="submit" class="btn" id="modify">Modify</button>
+       
       </form>
 
     </div>
