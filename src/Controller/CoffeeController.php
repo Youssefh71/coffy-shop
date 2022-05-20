@@ -46,8 +46,11 @@ class CoffeeController
             // Insertion en BDD
             $coffeeRepository = new CoffeeRepository();
             $success = $coffeeRepository->add($entity);
+            header('Location: /list?edit='. $success);
         }
 
+        
+        
         // La vue correspondant à ce controller
         require_once __DIR__ . '../../../templates/add.php';
     }
@@ -70,18 +73,16 @@ class CoffeeController
         $coffeeRepository = new CoffeeRepository();
         $success = $coffeeRepository->remove($_GET['id']);
 
-        // Redirige l'utilisateur vers la route "/liste"
+        // Redirige l'utilisateur vers la route "/list"
         header('Location: /list?delete=' . $success);
+
+        require_once __DIR__ .'../../../templates/list.php';
     }
     /**
      * Formulaire permettant d'ajouter un un type de café
      * URL d'accès : http://coffy-shop.test/
      */
-    public function display()
-    {
 
-        require_once __DIR__ . '../../../templates/liste.php';
-    }
     
     public function article()
     {
@@ -110,7 +111,7 @@ class CoffeeController
             // Transmet cet objet à une méthode du repository pour mise à jour
             $success = $coffeeRepository->update($listCoffee);
 
-            // Redirige l'utilisateur vers la tableau
+            // Redirige l'utilisateur vers le tableau
             header('Location: /list?edit='. $success);
         }
 
