@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -62,7 +64,7 @@
 
                                 </div>
 
-                                <div class="row card-body-icons">
+                               <?php if( isset($_SESSION['admin']) && $_SESSION['admin']['role'] === 'ROLE_ADMIN'): ?> <div class="row card-body-icons">
 
                                     <div class="col">
 
@@ -85,6 +87,7 @@
                                     </div>
 
                                 </div>
+                                <?php endif; ?>
 
                             </a>
                         </div>
