@@ -118,10 +118,26 @@ body {
     left: 85%;
     transform: translate(-50%, -50%);    
 }
+.back {
+    background:     #e5e7e9  ;
+}
+
+.best{
+    font-family: var(--title-font-family);
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.form-control {
+    font-size: 0.6rem;
+}
 
 #modify {
- background: rgb(255, 198, 93);
- border-radius: 10px;
+    color: #fff;
+    font-family: var(--title-font-family);
+ background:  #ec7063;
+ border-radius: 5px;
+ padding: 10px 20px;
 
 }
 
