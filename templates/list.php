@@ -21,7 +21,7 @@
         <?php require_once 'navigation-color.php' ?>
 
     </div>
-    <div class="isset">
+    <div class="isset w-25 mx-auto pt-5">
         <?php if (isset($_GET['delete']) && $_GET['delete']) : ?>
             <div class="alert alert-success">
                 La suppression à bien été effectuée
