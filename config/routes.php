@@ -45,6 +45,10 @@ switch ($uri) {
         $controller = new CoffeeController();
         $controller->edit();
         break;
+
+    
+
+    
     default:
         //  echo '<h1>Erreur 404</h1>';
         $controller = new ErrorController();
