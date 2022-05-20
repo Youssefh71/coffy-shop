@@ -16,39 +16,11 @@
 </head>
 
 <body>
+
    <?php require_once 'navigation.php' ?>
-   <?php require_once 'carousel.php' ?>
-  
-        <main class="py-5">
-            <div class="container">
-                <div>
-                    Bonjour !
-                    <a href="" title=""></a>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-lg-6 pb-5">
-                        <article>
-                            <a href="" title=" " class="text-dark text-decoration-none">
-                                <img src="" alt="" class="w-100 rounded">
-                                <h1 class="pt-2"></h1>
-                            </a>
-                            <p class="text-dark">
-                            </p>
-                            <p class="py-2">
-                            </p>
-                            <div class="d-flex align-items-center gap-2">
-                                <a href="" title="" class="badge rounded-pill bg-primary text-decoration-none">
-                                </a>
-                            </div>
-                        </article>
-                    </div>
+   <?php require_once 'carousel.php' ?>   
 
-
-                </div>
-            </div>
-        </main>
-
-    </nav>
 </body>
-
 </html>
+
+
