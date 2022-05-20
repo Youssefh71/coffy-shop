@@ -2,6 +2,9 @@
 
 require_once '../src/Controller/CoffeeController.php';
 require_once '../src/Controller/ErrorController.php';
+require_once '../src/Controller/Admin/AdminController.php';
+
+
 
 
 switch ($uri) {
@@ -12,23 +15,33 @@ switch ($uri) {
         $controller->index();
         break;
 
+    case '/admin':
+        $controller = new AdminController();
+        $controller->index();
+        break;
+
     case '/list':
         $controller = new CoffeeController();
         $controller->liste();
         break;
 
+    case '/admin/list':
+        $controller = new AdminController();
+        $controller->liste();
+        break;
+
         //Page pour ajouter un café
-    case '/add':
-        $controller = new CoffeeController();
+    case '/admin/add':
+        $controller = new AdminController();
         // Charge la méthode correspondant à la vue souhaitée
         $controller->insert();
         break;
 
         // Affiche tous les Coffee
-    // case '/liste':
-    //     $controller = new CoffeeController();
-    //     $controller->liste();
-    //     break;
+        // case '/liste':
+        //     $controller = new CoffeeController();
+        //     $controller->liste();
+        //     break;
         // Article
     case '/article':
         $controller = new CoffeeController();
@@ -36,13 +49,13 @@ switch ($uri) {
         break;
 
         // Supprimer un coffee
-    case '/delete/coffee':
-        $controller = new CoffeeController();
+    case '/admin/delete':
+        $controller = new AdminController();
         $controller->delete();
         break;
 
-    case '/edit/coffee':
-        $controller = new CoffeeController();
+    case '/admin/edit':
+        $controller = new AdminController();
         $controller->edit();
         break;
     default:

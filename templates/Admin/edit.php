@@ -19,7 +19,7 @@
 
 
   <div class="color-block">
-    <?php require_once 'navigation-color.php' ?>
+    <?php require_once '../navigation-color.phpnavigation-color.php' ?>
   </div>
 
 
