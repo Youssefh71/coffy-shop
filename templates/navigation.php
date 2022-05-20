@@ -14,7 +14,7 @@
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
             <li class="nav-item">
-              <a class="nav-link menu"  href="/list">Products</a>
+              <a class="nav-link menu"  href="/list">Produits</a>
             </li>
             <li class="nav-item">
               <a class="nav-link menu" href="/add">Ajouter</a>

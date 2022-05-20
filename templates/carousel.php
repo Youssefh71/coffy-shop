@@ -11,28 +11,28 @@
                         <img src="img/1coffee.jpg" class="d-block w-100 carousel-img" alt="image 1">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Bienvenue dans Coffee Boutique WF3 </h5>
-                            <a href="/list"><p>Explorez Varieté de Goûts</p></a>
+                            <a href="/list"><p>Explorez les Varietés de Goûts</p></a>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/6coffee.jpg" class="d-block w-100 carousel-img" alt="image 2">
                         <div class="carousel-caption d-none d-md-block">
                         <h5>Bienvenue dans Coffee Boutique WF3 </h5>
-                            <a href="/list"><p>Explorez Varieté de Goûts</p></a>
+                            <a href="/list"><p>Explorez les Varietés de Goûts</p></a>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/3coffee.jpg" class="d-block w-100 carousel-img" alt="image 3">
                         <div class="carousel-caption d-none d-md-block">
                         <h5>Bienvenue dans Coffee Boutique WF3 </h5>
-                        <a href="/list"><p>Explorez Varieté de Goûts</p></a>
+                        <a href="/list"><p>Explorez les Varietés de Goûts</p></a>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/5coffee.jpg" class="d-block w-100 carousel-img" alt="image 5">
                         <div class="carousel-caption d-none d-md-block">
                         <h5>Bienvenue dans Coffee Boutique WF3 </h5>
-                        <a href="/list"><p>Explorez Varieté de Goûts</p></a>
+                        <a href="/list"><p>Explorez les Varietés de Goûts</p></a>
                         </div>
                     </div>
                 </div>
