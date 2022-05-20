@@ -71,7 +71,7 @@ class CoffeeController
         $success = $coffeeRepository->remove($_GET['id']);
 
         // Redirige l'utilisateur vers la route "/liste"
-        header('Location: /liste?delete=' . $success);
+        header('Location: /list?delete=' . $success);
     }
     /**
      * Formulaire permettant d'ajouter un un type de café

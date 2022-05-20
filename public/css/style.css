@@ -93,7 +93,7 @@ body {
 }
 
 .card-body {
-    background-color: var(--blue);
+    /* background-color: var(--blue); */
     height: 30vh;
     position: relative;
 }
