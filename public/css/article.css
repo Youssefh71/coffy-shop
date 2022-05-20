@@ -26,7 +26,7 @@
 body {
     margin: 0;
     box-sizing: border-box;
-    
+   
 
 }
 h2{
@@ -41,5 +41,11 @@ p{
     background: rgb(255, 198, 93);
     border-radius: 10px;
     font-family: var(--text-font-family);
-    
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 10px;
 }
