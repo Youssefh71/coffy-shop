@@ -24,9 +24,9 @@
 
     <div class="container form-container">
             <form action="" method="post" class="myform">
-                <label for="code" class="form-label">Admin Code</label>
+                <label for="code" class="form-label code">Admin Code</label>
                 <input type="password" name="code" id="code" class="form-control">
-                <input type="submit" class="btn">
+                <input type="submit" class="btn my-5" id="modify">
             </form>
     </div>
 

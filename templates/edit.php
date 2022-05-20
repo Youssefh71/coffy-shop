@@ -66,16 +66,16 @@
 
         <div class="categorie mb-3">
           <p>Price</p>
-
         </div>
 
         <div class="row">
           <div class="col-8">
           <input type="text" name="price" class="form-control-file mb-3" id="price" value="<?php echo $listCoffee->getPrice(); ?>">
-          </div>
-          <div class="col-3">
+        </div>
+
+        <div class="col-3">
           <button type="submit" class="btn" id="modify">Modify</button>
-          </div>
+        </div>
           
         </div>
 

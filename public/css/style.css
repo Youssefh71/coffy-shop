@@ -133,8 +133,8 @@ body {
 }
 
 #modify {
-    color: #fff;
-    font-family: var(--title-font-family);
+color: #fff;
+font-family: var(--title-font-family);
  background:  #ec7063;
  border-radius: 5px;
  padding: 10px 20px;
@@ -155,6 +155,10 @@ body {
 .myform {
     padding: 7rem;
     justify-content: center;
+}
+
+.code {
+    font-family: var(--title-font-family);
 }
 
 
