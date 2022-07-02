@@ -43,14 +43,11 @@ class CoffeeController
             $entity->setPrice(htmlspecialchars(strip_tags($_POST['price'])));         
                     
 
-
             // Insertion en BDD
             $coffeeRepository = new CoffeeRepository();
             $success = $coffeeRepository->add($entity);
             header('Location: /list?edit='. $success);
-        }
-
-        
+        }      
         
         // La vue correspondant à ce controller
         require_once __DIR__ . '../../../templates/add.php';
@@ -83,7 +80,6 @@ class CoffeeController
      * Formulaire permettant d'ajouter un un type de café
      * URL d'accès : http://coffy-shop.test/
      */
-
     
     public function article()
     {

@@ -18,16 +18,13 @@
 
 <body>
 
-   <?php require_once 'navigation.php' ?>
-   <?php require_once 'carousel.php' ?> 
-   <div class="mt-5 pt-5">
-   
-   <?php require_once 'footer.php' ?>
-   </div>
-  
+    <?php require_once 'navigation.php' ?>
+    <?php require_once 'carousel.php' ?> 
+    <div class="mt-5 pt-5">
 
-  
-
+    <?php require_once 'footer.php' ?>
+    </div>
+ 
 </body>
 </html>
 

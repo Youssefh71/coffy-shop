@@ -52,6 +52,10 @@ body {
     color: inherit;
 } 
 
+.nav-item {
+    padding-left: 2rem;
+}
+
 .menu:hover {
     opacity: 0.9;
     color: inherit;
@@ -128,17 +132,14 @@ body {
     font-size: 0.8rem;
 }
 
-.form-control {
-    font-size: 0.6rem;
-}
-
-.form-control-file {
-    font-size: 0.6rem;
+/* Forms */
+.edit-input {
+    font-size: 0.7rem;
 }
 
 #modify {
-color: #fff;
-font-family: var(--title-font-family);
+ color: #fff;
+ font-family: var(--title-font-family);
  background:  #ec7063;
  border-radius: 5px;
  padding: 10px 20px;
